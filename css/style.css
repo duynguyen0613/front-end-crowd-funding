@@ -1,0 +1,80 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ :root {
+
+    /* 
+    mobile: 375px;
+    desktop: 1440px;
+    */
+
+    --c-primary-moderate-cyan: hsl(176,50%,47%);
+    --c-primary-dark-cyan: hsl(176,72%,28%);
+
+    --c-neutral-back:hsl(0, 0%, 0%);
+    --c-neutal-dark-gray: hsl(0,0%, 48%);
+
+    --ff: "Comisstioner", sans-serif;
+
+    --fw-1: 400;
+    --fw-2: 500;
+    --fw-3: 700;
+ }
+
+ html {
+     font-size: 62.5%;
+ }
+
+ a {
+     text-decoration: none;
+     color: #333;
+ }
+
+ ul {
+     list-style: none;
+     
+ }
+
+
+ /*  */
+ header {
+     display: none;
+ }
+
+ body {
+     background: rgb(240, 240, 240);
+     font-family: var(--ff);
+     font-size: 1.6rem;
+     width: 100vw;
+     min-height: 100vh;
+ }
+
+ /* main width dimension */
+ main {
+     width: 90%;
+     min-width: 320px;
+     margin: 0 auto;
+ }
+ /*  */
+
+ section {
+     margin: 1.4rem 0;
+     border-radius: 15px;
+     background: #fff;
+     padding: 1.9rem 1.8rem;
+ }
+
+ /*  */
+ /*  */
+ /*  */
+
+ .section__header {
+     background: red;
+ }
+ 
+.section__logo {
+
+ }
