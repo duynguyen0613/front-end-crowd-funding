@@ -256,7 +256,7 @@
      justify-content: space-between;
      align-items: flex-start;
      min-height: 40vh;
-     padding: 1.8rem;
+     padding: 2rem 4rem;
      position: relative;
      top: 0;
      left: 0;
@@ -313,6 +313,17 @@
      padding-bottom: 1rem;
      border-bottom: 1px solid rgb(221, 221, 221);
  }
+ /* out of order last card box */
+ 
+ .out-of-stock {}
+ 
+ .out-of-stock .title,
+ .out-of-stock .text,
+ .out-of-stock .section--small,
+ .out-of-stock .section__project__seat,
+ .out-of-stock .section__project__action {
+     opacity: .3;
+ }
  /* media query ipad */
  
  @media (min-width: 810px) {
@@ -351,5 +362,60 @@
          font-size: 1.2rem;
          letter-spacing: 2px;
          font-weight: var(--fw-3);
+     }
+     /* main sections */
+     .section__header .section__action {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+     }
+     .section__header .btn--primary {
+         flex-basis: 40%;
+         max-width: 20rem;
+     }
+     .section__header .section__action--bookmark {
+         position: relative;
+         flex-basis: 40%;
+         z-index: 99;
+     }
+     .section__header .section__action--bookmark::after {
+         content: "Bookmark";
+         position: absolute;
+         top: 0;
+         left: 70%;
+         height: 70%;
+         padding: 0 2rem;
+         margin-top: 20%;
+         font-size: 1rem;
+         font-weight: var(--fw-3);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 10000px;
+         background: rgba(233, 233, 233, 0.342);
+         z-index: -1;
+     }
+     .section__project {
+         position: relative;
+         top: 0;
+         left: 0;
+     }
+     .section__project .title {
+         margin-bottom: 2.6rem;
+         font-size: 2rem;
+     }
+     .section__project .text {
+         max-width: 700px;
+         font-size: 1.4rem;
+     }
+     .section--small {
+         position: absolute;
+         right: 1.6rem;
+         top: 2.2rem;
+     }
+     .section__project .btn--primary {
+         position: absolute;
+         right: 1rem;
+         bottom: 4rem;
      }
  }
